@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
      WHATSAPP NUMBER
   ===================================================== */
 
-  const WHATSAPP_NUMBER = "923457518694";
+  const WHATSAPP_NUMBER = "923136518694";
 
 
   /* =====================================================
