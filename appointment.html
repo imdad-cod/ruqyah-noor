@@ -186,74 +186,38 @@
 
 
     /* =====================================================
-       APPOINTMENT FORM — COMPLETE STYLE
-    ===================================================== */
-
-
-    /* =====================================================
-       REQUIRED COLOR VARIABLES
-    ===================================================== */
-
-    :root {
-
-      --green: #123d32;
-
-      --green-dark: #0b2b23;
-
-      --green-light: #1d5b49;
-
-      --gold: #c9a45c;
-
-      --gold-light: #d9b45b;
-
-      --cream: #fbfaf6;
-
-      --cream-dark: #f3f0e7;
-
-      --white: #ffffff;
-
-      --ink: #1c2824;
-
-      --muted: #66736d;
-
-      --line: #e4e8e3;
-
-      --shadow:
-        0 18px 50px rgba(18, 61, 50, 0.10);
-
-      --radius: 18px;
-    }
-
-
-    /* =====================================================
-       APPOINTMENT SECTION
+       APPOINTMENT FORM
+       ISOLATED FORM STYLE
     ===================================================== */
 
     .appointment-section {
 
-      background: #f2eee4;
+      background: #f2eee4 !important;
+
+      padding: 90px 0 !important;
     }
 
 
     /* =====================================================
-       APPOINTMENT FORM BOX
+       FORM BOX
     ===================================================== */
 
-    .appointment-form {
+    #appointmentForm.appointment-form {
 
-      max-width: 950px;
+      max-width: 950px !important;
 
-      margin: auto;
+      margin: auto !important;
 
-      background: var(--white);
+      background: #ffffff !important;
 
-      border-radius: 20px;
+      border-radius: 20px !important;
 
-      padding: 35px;
+      padding: 35px !important;
 
-      box-shadow: var(--shadow);
+      box-shadow:
+        0 18px 50px rgba(18, 61, 50, 0.10) !important;
 
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
 
 
@@ -261,14 +225,14 @@
        FORM GRID
     ===================================================== */
 
-    .form-grid {
+    #appointmentForm .form-grid {
 
-      display: grid;
+      display: grid !important;
 
       grid-template-columns:
-        repeat(2, 1fr);
+        repeat(2, 1fr) !important;
 
-      gap: 20px;
+      gap: 20px !important;
     }
 
 
@@ -276,11 +240,11 @@
        FORM GROUP
     ===================================================== */
 
-    .form-group {
+    #appointmentForm .form-group {
 
-      display: flex;
+      display: flex !important;
 
-      flex-direction: column;
+      flex-direction: column !important;
     }
 
 
@@ -288,9 +252,9 @@
        FULL WIDTH
     ===================================================== */
 
-    .full-width {
+    #appointmentForm .full-width {
 
-      grid-column: 1 / -1;
+      grid-column: 1 / -1 !important;
     }
 
 
@@ -298,15 +262,15 @@
        LABEL
     ===================================================== */
 
-    .form-group label {
+    #appointmentForm .form-group label {
 
-      color: var(--green);
+      color: #123d32 !important;
 
-      font-weight: 700;
+      font-weight: 700 !important;
 
-      font-size: 14px;
+      font-size: 14px !important;
 
-      margin-bottom: 7px;
+      margin-bottom: 7px !important;
     }
 
 
@@ -314,148 +278,54 @@
        INPUT / SELECT / TEXTAREA
     ===================================================== */
 
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
+    #appointmentForm .form-group input,
+    #appointmentForm .form-group select,
+    #appointmentForm .form-group textarea {
 
-      width: 100%;
+      width: 100% !important;
 
-      border: 1px solid var(--line);
+      border: 1px solid #e4e8e3 !important;
 
-      border-radius: 8px;
+      border-radius: 8px !important;
 
-      padding: 13px 14px;
+      padding: 13px 14px !important;
 
-      background: #fcfcfa;
+      background: #fcfcfa !important;
 
-      color: var(--ink);
+      color: #1c2824 !important;
 
-      outline: none;
+      outline: none !important;
 
-      transition: 0.2s ease;
+      transition: 0.2s ease !important;
 
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
 
 
     /* =====================================================
-       SELECT DROPDOWN
+       SELECT
     ===================================================== */
 
-    .form-group select {
+    #appointmentForm .form-group select {
 
-      cursor: pointer;
+      cursor: pointer !important;
 
-      appearance: auto;
+      appearance: auto !important;
     }
 
 
     /* =====================================================
-       DATE DROPDOWN
+       FOCUS
     ===================================================== */
 
-    .date-selects {
+    #appointmentForm .form-group input:focus,
+    #appointmentForm .form-group select:focus,
+    #appointmentForm .form-group textarea:focus {
 
-      display: grid;
-
-      grid-template-columns:
-        0.8fr 1.4fr 1fr;
-
-      gap: 10px;
-    }
-
-
-    .date-selects select {
-
-      width: 100%;
-
-      border: 1px solid var(--line);
-
-      border-radius: 8px;
-
-      padding: 13px 14px;
-
-      background: #fcfcfa;
-
-      color: var(--ink);
-
-      outline: none;
-
-      cursor: pointer;
-
-      box-sizing: border-box;
-    }
-
-
-    .date-selects select:focus {
-
-      border-color: var(--green);
+      border-color: #123d32 !important;
 
       box-shadow:
-        0 0 0 3px rgba(18, 61, 50, 0.08);
-    }
-
-
-    /* =====================================================
-       TIME DROPDOWN
-    ===================================================== */
-
-    .time-selects {
-
-      display: grid;
-
-      grid-template-columns:
-        1fr 1fr 1fr;
-
-      gap: 10px;
-    }
-
-
-    .time-selects select {
-
-      width: 100%;
-
-      border: 1px solid var(--line);
-
-      border-radius: 8px;
-
-      padding: 13px 14px;
-
-      background: #fcfcfa;
-
-      color: var(--ink);
-
-      outline: none;
-
-      cursor: pointer;
-
-      transition: 0.2s ease;
-
-      box-sizing: border-box;
-    }
-
-
-    .time-selects select:focus {
-
-      border-color: var(--green);
-
-      box-shadow:
-        0 0 0 3px rgba(18, 61, 50, 0.08);
-    }
-
-
-    /* =====================================================
-       INPUT FOCUS
-    ===================================================== */
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-
-      border-color: var(--green);
-
-      box-shadow:
-        0 0 0 3px rgba(18, 61, 50, 0.08);
+        0 0 0 3px rgba(18, 61, 50, 0.08) !important;
     }
 
 
@@ -463,11 +333,105 @@
        TEXTAREA
     ===================================================== */
 
-    .form-group textarea {
+    #appointmentForm .form-group textarea {
 
-      resize: vertical;
+      resize: vertical !important;
 
-      min-height: 140px;
+      min-height: 140px !important;
+    }
+
+
+    /* =====================================================
+       DATE SELECTS
+    ===================================================== */
+
+    #appointmentForm .date-selects {
+
+      display: grid !important;
+
+      grid-template-columns:
+        0.8fr 1.4fr 1fr !important;
+
+      gap: 10px !important;
+    }
+
+
+    #appointmentForm .date-selects select {
+
+      width: 100% !important;
+
+      border: 1px solid #e4e8e3 !important;
+
+      border-radius: 8px !important;
+
+      padding: 13px 14px !important;
+
+      background: #fcfcfa !important;
+
+      color: #1c2824 !important;
+
+      outline: none !important;
+
+      cursor: pointer !important;
+
+      box-sizing: border-box !important;
+    }
+
+
+    #appointmentForm .date-selects select:focus {
+
+      border-color: #123d32 !important;
+
+      box-shadow:
+        0 0 0 3px rgba(18, 61, 50, 0.08) !important;
+    }
+
+
+    /* =====================================================
+       TIME SELECTS
+    ===================================================== */
+
+    #appointmentForm .time-selects {
+
+      display: grid !important;
+
+      grid-template-columns:
+        1fr 1fr 1fr !important;
+
+      gap: 10px !important;
+    }
+
+
+    #appointmentForm .time-selects select {
+
+      width: 100% !important;
+
+      border: 1px solid #e4e8e3 !important;
+
+      border-radius: 8px !important;
+
+      padding: 13px 14px !important;
+
+      background: #fcfcfa !important;
+
+      color: #1c2824 !important;
+
+      outline: none !important;
+
+      cursor: pointer !important;
+
+      transition: 0.2s ease !important;
+
+      box-sizing: border-box !important;
+    }
+
+
+    #appointmentForm .time-selects select:focus {
+
+      border-color: #123d32 !important;
+
+      box-shadow:
+        0 0 0 3px rgba(18, 61, 50, 0.08) !important;
     }
 
 
@@ -475,31 +439,29 @@
        CONSENT
     ===================================================== */
 
-    .consent label {
+    #appointmentForm .consent label {
 
-      display: flex;
+      display: flex !important;
 
-      flex-direction: row;
+      flex-direction: row !important;
 
-      align-items: flex-start;
+      align-items: flex-start !important;
 
-      gap: 10px;
+      gap: 10px !important;
 
-      color: var(--muted);
+      color: #66736d !important;
 
-      font-weight: 400;
+      font-weight: 400 !important;
     }
 
 
-    .consent input {
+    #appointmentForm .consent input {
 
-      width: 18px;
+      width: 18px !important;
 
-      height: 18px;
+      height: 18px !important;
 
-      margin-top: 4px;
-
-      flex-shrink: 0;
+      margin-top: 4px !important;
     }
 
 
@@ -507,11 +469,41 @@
        SUBMIT BUTTON
     ===================================================== */
 
-    .submit-button {
+    #appointmentForm .submit-button {
 
-      margin-top: 25px;
+      display: inline-block !important;
 
-      border: 0;
+      width: auto !important;
+
+      margin-top: 25px !important;
+
+      border: 0 !important;
+
+      background: #123d32 !important;
+
+      color: #ffffff !important;
+
+      padding: 13px 22px !important;
+
+      min-height: 50px !important;
+
+      border-radius: 8px !important;
+
+      font-weight: 700 !important;
+
+      cursor: pointer !important;
+
+      transition: 0.25s ease !important;
+
+      transform: none !important;
+    }
+
+
+    #appointmentForm .submit-button:hover {
+
+      background: #1d5b49 !important;
+
+      transform: translateY(-2px) !important;
     }
 
 
@@ -519,13 +511,33 @@
        FORM MESSAGE
     ===================================================== */
 
-    .form-message {
+    #appointmentForm .form-message {
 
-      margin-top: 15px;
+      margin-top: 15px !important;
 
-      font-size: 14px;
+      font-size: 14px !important;
 
-      color: var(--green);
+      color: #123d32 !important;
+    }
+
+
+    /* =====================================================
+       TABLET FORM
+    ===================================================== */
+
+    @media (max-width: 850px) {
+
+      .appointment-section {
+
+        padding: 70px 0 !important;
+      }
+
+
+      #appointmentForm.appointment-form {
+
+        padding: 30px !important;
+      }
+
     }
 
 
@@ -535,55 +547,107 @@
 
     @media (max-width: 600px) {
 
-      .form-grid {
+      .appointment-section {
 
-        grid-template-columns: 1fr;
+        padding: 60px 0 !important;
       }
 
 
-      .full-width {
+      #appointmentForm.appointment-form {
 
-        grid-column: auto;
+        width: calc(100% - 28px) !important;
+
+        padding: 22px !important;
+
+        border-radius: 16px !important;
       }
 
 
-      .appointment-form {
+      #appointmentForm .form-grid {
 
-        padding: 22px;
+        grid-template-columns: 1fr !important;
+
+        gap: 16px !important;
       }
 
 
-      .date-selects {
+      #appointmentForm .full-width {
+
+        grid-column: auto !important;
+      }
+
+
+      #appointmentForm .form-group input,
+      #appointmentForm .form-group select,
+      #appointmentForm .form-group textarea {
+
+        padding: 12px !important;
+
+        font-size: 14px !important;
+      }
+
+
+      /* ===================================================
+         MOBILE DATE — THREE SELECTS IN ONE ROW
+      =================================================== */
+
+      #appointmentForm .date-selects {
+
+        display: grid !important;
 
         grid-template-columns:
-          0.8fr 1.4fr 1fr;
+          0.8fr 1.4fr 1fr !important;
 
-        gap: 7px;
+        gap: 7px !important;
+
+        width: 100% !important;
       }
 
 
-      .date-selects select {
+      #appointmentForm .date-selects select {
 
-        padding: 12px 8px;
+        width: 100% !important;
 
-        font-size: 14px;
+        padding: 12px 8px !important;
+
+        font-size: 14px !important;
+
+        min-width: 0 !important;
       }
 
 
-      .time-selects {
+      /* ===================================================
+         MOBILE TIME — THREE SELECTS IN ONE ROW
+      =================================================== */
+
+      #appointmentForm .time-selects {
+
+        display: grid !important;
 
         grid-template-columns:
-          1fr 1fr 1fr;
+          1fr 1fr 1fr !important;
 
-        gap: 7px;
+        gap: 7px !important;
+
+        width: 100% !important;
       }
 
 
-      .time-selects select {
+      #appointmentForm .time-selects select {
 
-        padding: 12px 8px;
+        width: 100% !important;
 
-        font-size: 14px;
+        padding: 12px 8px !important;
+
+        font-size: 14px !important;
+
+        min-width: 0 !important;
+      }
+
+
+      #appointmentForm .submit-button {
+
+        width: 100% !important;
       }
 
     }
@@ -782,14 +846,6 @@
       }
 
 
-      .appointment-form {
-
-        padding: 22px;
-
-        border-radius: 16px;
-      }
-
-
       .appointment-info {
 
         grid-template-columns: 1fr;
@@ -801,24 +857,6 @@
         padding: 38px 18px;
 
         border-radius: 18px;
-      }
-
-    }
-
-
-    @media (max-width: 430px) {
-
-      .date-selects {
-
-        grid-template-columns:
-          1fr;
-      }
-
-
-      .time-selects {
-
-        grid-template-columns:
-          1fr;
       }
 
     }
@@ -977,7 +1015,7 @@
 
 
     <!-- =====================================================
-         NEW APPOINTMENT FORM
+         APPOINTMENT FORM
     ===================================================== -->
 
     <section class="appointment-section">
